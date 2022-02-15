@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 1</title>
+  
+  <style>
+    *{
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 700px) {
+  .topRow {
+    background-image: linear-gradient(rgba(235, 93, 27, 0.781), yellow);
+  }
+  header, footer {
+    background-image: linear-gradient(rgba(235, 93, 27, 0.781), yellow);
+  }
+  .bottomRow {
+    background-image: linear-gradient(rgba(235, 93, 27, 0.781), yellow);
+  }
+}
+
+@media screen and (min-width: 701px) {
+  .topRow {
+    background-image: linear-gradient(to bottom right, rgba(69, 235, 27, 0.781), rgb(0, 17, 255));
+  }
+  header, footer {
+    background-image: linear-gradient(to bottom right, rgba(69, 235, 27, 0.781), rgb(0, 17, 255));
+  }
+  .bottomRow {
+    background-image: linear-gradient(to bottom right, rgba(69, 235, 27, 0.781), rgb(0, 17, 255));
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .topRow {
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+  }
+  header, footer {
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+  }
+  .bottomRow {
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+  }
+}
+
+
+header, footer {
+    border: 3px solid red;
+    clear: both;
+    height: 100px;
+}
+.topRow {
+  height: 300px;
+  border: 3px solid green;
+  float : left;
+  width: 33%;
+}
+
+.bottomRow {
+ height: 300px;
+ border: 3px solid green;
+ float : left;
+ width: 50%;
+ }
+
+  </style>
+  
+</head>
+<body>
+    <header>    </header>
+  
+    <section class="topRow"></section>
+    <section class="topRow"></section>
+    <section class="topRow"></section>
+    <section class="bottomRow"></section>
+    <section class="bottomRow"></section>
+
+  <footer></footer>
+  
+
+
+</body>
+</html>
