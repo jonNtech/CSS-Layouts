@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Practice</title>
+
+    <style>
+
+        * {
+            border: 1px solid black;
+            box-sizing: border-box;
+        }    
+
+        header, footer {
+            height: 200px;
+            clear: both;
+        }
+
+        section, main, aside {
+            height: 300px;
+            float: left;
+            width: 25%;
+        }
+
+        @media screen and (max-width: 600px) {
+            section, main, aside {
+                background-color: red;
+                width: 100%;
+                float: none;
+            }
+        }        
+
+    </style>
+
+</head>
+<body>
+
+    <header></header>
+    
+    <section>1</section>
+    <section>2</section>
+    <section>3</section>
+    <main>4</main>
+    <aside>5</aside>
+    <footer></footer>
+
+</body>
+</html>
