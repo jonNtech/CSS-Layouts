@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 3</title>
+
+<style type="text/css">
+    *{
+        box-sizing: border-box;
+    }
+
+    header, footer  {
+        border: 3px solid red;
+        clear: both;
+        height: 100px;
+    }
+    .lefter, .left, .right, .righter {
+        border: 3px solid red;
+        Height: 800px;
+        float: left;
+    }
+
+    .lefter {
+        width: 20%;
+    }
+    .left {
+        width: 40%;
+    }
+    .right {
+        width: 20%;
+    }
+    .righter {
+        width: 20%;
+    }
+
+    @media only screen and (min-width: 1301px) {
+            section {
+                background-color: purple;
+            }
+        }
+        @media only screen and (max-width: 1300px) {
+            .left, .right {
+                background-color: yellow;
+            }
+        }
+
+        @media only screen and (max-width: 900px){
+            .right, .yellow{
+                background-color: hotpink;
+            }
+        }
+
+        @media only screen and (max-width: 700px) {
+            .lefter, .righter {
+                background-color: lightblue;
+            }
+        }
+
+        @media only screen and (max-width: 500px){
+            body{
+                background-color:  teal;
+            }
+            .left, .lefter {
+                display: none;
+            }
+        }
+
+</style>
+
+</head>
+<body>
+
+<header></header>
+<section class="lefter"></section>
+<section class="left"></section>
+<section class="right"></section>
+<section class="righter"></section>    
+<footer></footer>
+
+</body>
+</html>
