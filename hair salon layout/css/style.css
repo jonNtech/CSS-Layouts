@@ -1,0 +1,238 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  background-color: rgb(214, 214, 214);
+  height: 75px;
+  color: black;
+  list-style: none;
+  text-decoration: none;
+  
+}
+header nav  * {
+  float: left;
+  width: 10%;
+  list-style: none;
+  display: block;
+  color: black;
+  
+}
+nav  ul {
+  width: 70%;
+  float: left;
+  color: black;
+}
+
+
+ul + a {
+  float: right;
+  padding: 10px;
+  
+}
+nav > a {
+  color: black;
+  margin: 20px 40px 0 40px;
+  
+}
+
+/* This is the main section*/
+main {
+  background-image: url('hairstyle_web.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 700px;
+  color: white;
+  text-decoration: none;
+
+}
+
+main span + a {
+  color: white;
+  text-decoration: none;
+  background-color: black;
+  padding: 10px 30px;
+  margin: 10px;
+}
+
+main h1 {
+  font-size:6rem;
+  margin: 20px 500px 10px 40px;
+
+}
+
+main h1 + span {
+  font-size: 1.5rem;
+  margin-left: 40px;
+  
+}
+
+
+main section {
+  background-color: black;
+  height: 300px;
+  width: 20%;
+  margin: 30px 40px;
+  padding-top: 30px;
+}
+
+
+main section p + a {
+  color: black;
+  text-decoration: none;
+  background-color: white;
+  padding: 10px 30px;
+  
+
+}
+main section span {
+  margin: 10px
+}
+
+/* This is the 2nd section*/
+main + section > * {
+  float: left;
+  width: 33.333%;
+  padding: 100px;
+}
+
+main +section h6 {
+  font-size: 1.5rem;
+
+}
+
+/* This is the 3rd section*/
+main + section + section {
+   width: 100%;
+   height: 500px;
+   background-color: rgb(202, 199, 199);
+   float: left;
+ }
+
+ main + section + section > * {
+   float: left;
+   width: 50%;
+ }
+
+ main + section + section h3 {
+   font-size: 3rem;
+   padding: 30px 30px 0 30px;
+ }
+
+ main + section + section p {
+   font-size: 1.5rem;
+   padding: 30px;
+ }
+ main + section + section a {
+   font-size: 1rem;
+   padding: 10px 30px;
+   background-color: black;
+   color: white;
+   margin-left: 30px;
+ }
+
+ /* This is the 3 cats with captions section*/
+ main + section + section + section > * {
+   float: left;
+   width: 33.333%;
+   padding: 30px 100px;
+   margin: auto;
+ }
+
+ main + section + section + section figure {
+   width: auto;
+ }
+ main + section + section + section figcaption {
+   
+   background-color: black;
+   color: white;
+   padding: 10px 10px;
+   text-align: center;
+ }
+/* This is the aside section*/
+ aside {
+   float: left;
+   width: 100%;
+   height: 400px;
+   background-color: grey;
+
+ }
+
+ aside section {
+   float: left;
+   padding: 100px;
+ }
+/* This is the lookbook section*/
+ h3 {
+   text-align: center;
+   font-size: 3rem;
+   clear: both;
+   
+ }
+
+ h3 + section {
+   clear: both;
+   width: 50%;
+   display: grid;
+   margin: 0 auto;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(3, 1fr);
+ }
+
+
+ 
+/* had to learn grid for this*/
+.second {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.fourth {
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.sixth {
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.fifth {
+  margin: 5% 0 ;
+}
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
